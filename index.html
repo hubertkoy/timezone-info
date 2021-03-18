@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Template</title>
+    <meta name="author" content="Hubert Koy">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="favicon.png" rel="icon">
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5 w-25">
+    <h4>Time Zone information</h4>
+    <div class="alert alert-warning" role="alert" id="error"><span id="errorInfo"></span></div>
+    <div class="d-grid">
+        <label for="lat">Latitude:</label>
+        <input type="number" id="lat" name="lat" min="-90" max="90"><br>
+        <label for="lng">Longitude:</label>
+        <input type="number" id="lng" name="lng" min="-180" max="180">
+        <button class="btn btn-primary mt-2 w-25" type="submit" id="btnRun">Submit</button>
+    </div>
+    <div class="main">
+        <div>Country name: <span id="countryName">Nigeria</span>, <span id="countryCode">NG</span>.</div>
+        <div>Geo cords: <span id="latVal">10</span> <small class="text-muted">(latitude)</small>, <span
+                id="lngVal">10</span>
+            <small class="text-muted">(longitude)</small>.
+        </div>
+        <div>Current Time: <span id="currentTime">2021-03-18 10:49</span></div>
+        <div>Sunrise: <span id="sunrise">2021-03-18 06:25</span></div>
+        <div>Sunset: <span id="sunset">2021-03-18 18:30</span></div>
+        <div>Timezone: <span id="timezone">Africa/Lagos</span></div>
+        <div>Query time: <span id="returnedIn">145 ms</span></div>
+    </div>
+</div>
+<div id="preloader">
+
+</div>
+
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
